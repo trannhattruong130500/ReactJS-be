@@ -2,7 +2,7 @@
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable('Users', {
-  
+
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -30,14 +30,14 @@ module.exports = {
       roleId: {
         type: Sequelize.STRING
       },
-      phoneNumber: {
+      phonenumber: {
         type: Sequelize.STRING
       },
       positionId: {
         type: Sequelize.STRING
       },
       image: {
-        type: Sequelize.STRING
+        type: Sequelize.BLOB('long')
       },
       createdAt: {
         allowNull: false,
